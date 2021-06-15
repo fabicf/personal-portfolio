@@ -25,12 +25,12 @@ function Card({ imgSrc, title, subtitle, description, viewUrl }) {
             </figcaption>     
           </figure> */}
 
-        <figure class="effect-milo">
-        <img src={imgSrc}/>
+        <figure className="effect-milo">
+        <img src={imgSrc} alt={""}/>
             <figcaption>
               <h2>{title} <span>{subtitle}</span></h2>
               <p>{description}</p>
-              <a href={viewUrl} target="_blank"></a>
+              <a href={viewUrl} target="_blank" rel="noreferrer">View</a>
             </figcaption>     
           </figure>
 

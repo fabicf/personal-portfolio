@@ -1,3 +1,61 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url(/src/background.jpg) center/cover no-repeat fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.home{
+  height: 100vh;
+}
+
+.icons > div {
+  font-size: 1.3rem;
+}
+
+.icons > div > a > i {
+  color: black;
+}
+
+.icons > div > a > i:hover {
+  color: coral;
+}
+
+.img-profile{
+  border: 1px solid coral;
+  border-radius: 50%;
+  width: 11rem;
+}
+
+
+/* education experience */
+.education-ctn {
+  background-color:green;
+  color:white;
+  text-align: justify;
+}
+
+.education-board-inside {
+  border: 1px solid purple;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.education-icon {
+  color: orange;
+}
+
+.school-link{
+  text-decoration: none;
+  color: orange;
+}
+
+.school-link:hover{
+  color: purple;
+}
+
+
 /* ------------ services cards -------------*/
 
 .grid figure {
