@@ -28,7 +28,7 @@ function Home() {
       viewUrl: "https://fabicf-weather.vercel.app/",
     },
     {
-      imgSrc: "images/project-3.PNG",
+      imgSrc: "images/project-3.png",
       title: "FreshGoods",
       subtitle: "Ecommerce",
       description: "C#, asp.NET, Razor Pages, JS, API",
