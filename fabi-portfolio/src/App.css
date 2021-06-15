@@ -1,9 +1,32 @@
+:root {
+  --clr-primary: #F0AFA1;
+  --clr-primary-light: #E57175;
+  --clr-secondary: #304646;
+  --clr-secondary-light: #70B1B0;
+  --clr-grey-10: #DDDDD6;
+  --clr-white: #fff;
+}
+
 body {
   min-height: 100vh;
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
-    url(/src/background.jpg) center/cover no-repeat fixed;
+    url(/src/back-1.jpeg) center/cover no-repeat fixed;
   position: relative;
   overflow-x: hidden;
+
+}
+
+h3{
+  padding-bottom: 1rem;
+  color: var(--clr-white);
+}
+
+.h3-dark{
+  color: var(--clr-secondary);
+}
+
+h6{
+  color: var(--clr-white);
 }
 
 .home{
@@ -19,46 +42,82 @@ body {
 }
 
 .icons > div > a > i:hover {
-  color: coral;
+  color: var(--clr-primary-light);
 }
 
 .img-profile{
-  border: 1px solid coral;
+  /* border: 1px solid var(--clr-secondary); */
   border-radius: 50%;
   width: 11rem;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+  margin-bottom: 1rem;
+
 }
 
+.about-me, .educ-exp{
+  background-color: rgba(48, 70, 70, 0.9); 
+}
 
-/* education experience */
-.education-ctn {
-  background-color:green;
-  color:white;
-  text-align: justify;
+.about-me {
+  /* height: 80vh; */
+  color: var(--clr-white);
+}
+
+.portfolio-session{
+  background-color: var(--clr-white);
 }
 
 .education-board-inside {
-  border: 1px solid purple;
-  padding: 2rem;
-  border-radius: 2rem;
+  border: 1px solid var(--clr-white);
+  /* box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.1); */
+  padding: 1rem;
+  border-radius: 0.8rem;
+  color: var(--clr-white);
+
+}
+
+@keyframes bouce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .education-icon {
-  color: orange;
+  color: var(--clr-white);  
+  cursor: pointer;
+}
+
+.education-icon-anim {
+  animation: bouce 2s ease infinite;
+}
+
+
+.education-icon:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
 }
 
 .school-link{
   text-decoration: none;
-  color: orange;
+  color: var(--clr-white);
 }
 
 .school-link:hover{
-  color: purple;
+  color: var(--clr-primary);
 }
-
 
 /* ------------ services cards -------------*/
 
-.grid figure {
+.grid figure {  
+  border-radius: 0.5rem; 
+  /* border: 0.01rem solid var(--clr-secondary); */
+  box-shadow: 0 0 5px 2px rgba(48, 70, 70, 0.1);
   position: relative;
   float: left;
   overflow: hidden;
@@ -87,11 +146,14 @@ body {
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  
+
 }
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
   pointer-events: none;
+  
 }
 
 .grid figure figcaption,
@@ -133,82 +195,6 @@ body {
 }
 
 /*---------------*/
-/***** Bubba *****/
-/*---------------*/
-/* figure.effect-bubba {
-  background: #9e5406;
-}
-
-figure.effect-bubba img {
-  opacity: 0.7;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-figure.effect-bubba:hover img {
-  opacity: 0.4;
-}
-
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-bubba figcaption::before {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0,1);
-  transform: scale(0,1);
-}
-
-figure.effect-bubba figcaption::after {
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-  -webkit-transform: scale(1,0);
-  transform: scale(1,0);
-}
-
-figure.effect-bubba h2 {
-  padding-top: 30%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,-20px,0);
-  transform: translate3d(0,-20px,0);
-}
-
-figure.effect-bubba p {
-  padding: 20px 2.5em;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,20px,0);
-  transform: translate3d(0,20px,0);
-}
-
-figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-} */
-
-
-/*---------------*/
 /***** Milo *****/
 /*---------------*/
 
@@ -220,17 +206,18 @@ figure.effect-milo img {
   max-width: none;
   width: -webkit-calc(100% + 60px);
   width: calc(100% + 60px);
-  opacity: 1;
+  opacity: 0.6;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-30px,0,0) scale(1.12);
   transform: translate3d(-30px,0,0) scale(1.12);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  
 }
 
 figure.effect-milo:hover img {
-  opacity: 0.5;
+  opacity: 0.1;
   -webkit-transform: translate3d(0,0,0) scale(1);
   transform: translate3d(0,0,0) scale(1);
 }
@@ -259,74 +246,3 @@ figure.effect-milo:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-
-/*---------------*/
-/***** Oscar *****/
-/*---------------*/
-/* 
-figure.effect-oscar {
-  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
-}
-
-figure.effect-oscar img {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-figure.effect-oscar figcaption {
-  padding: 3em;
-  background-color: rgba(58,52,42,0.7);
-  -webkit-transition: background-color 0.35s;
-  transition: background-color 0.35s;
-}
-
-figure.effect-oscar figcaption::before {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  border: 1px solid #fff;
-  content: '';
-}
-
-figure.effect-oscar h2 {
-  margin: 20% 0 10px 0;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
-
-figure.effect-oscar figcaption::before,
-figure.effect-oscar p {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-figure.effect-oscar:hover h2 {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-oscar:hover figcaption::before,
-figure.effect-oscar:hover p {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-figure.effect-oscar:hover figcaption {
-  background-color: rgba(58,52,42,0);
-}
-
-figure.effect-oscar:hover img {
-  opacity: 0.4;
-} */
-
-/* ------------ services cards -------------*/

@@ -3,27 +3,7 @@
 
 function Card({ imgSrc, title, subtitle, description, viewUrl }) {
     return (
-      <div className="services-card col-sm-4 col-12 grid">
-        {/* <figure className="effect-bubba">
-          <img src={imgSrc}/>
-          <figcaption>
-            <h2>
-              <span>{title}</span>
-            </h2>
-            <p>{description}</p>
-            
-            <a href={viewUrl}>View more</a>
-          </figcaption>
-        </figure> */}
-
-        {/* <figure class="effect-oscar">
-        <img src={imgSrc}/>
-            <figcaption>
-              <h2>Warm <span>{title}</span></h2>
-              <p>{description}</p>
-              <a href={viewUrl}>View more</a>
-            </figcaption>     
-          </figure> */}
+      <div className="services-card col-sm-4 grid d-flex justify-content-md-center my-1">    
 
         <figure className="effect-milo">
         <img src={imgSrc} alt={""}/>
@@ -33,7 +13,6 @@ function Card({ imgSrc, title, subtitle, description, viewUrl }) {
               <a href={viewUrl} target="_blank" rel="noreferrer">View</a>
             </figcaption>     
           </figure>
-
       </div>
     );
   }
