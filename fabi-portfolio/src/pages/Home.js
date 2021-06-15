@@ -53,7 +53,7 @@ function Home() {
       title: "Portfolio",
       subtitle: "Website",
       description: "React.js, Bootstrap React, Javascript",
-      viewUrl: "https://fabicf.vercel.app/",
+      viewUrl: "https://github.com/fabicf/personal-portfolio",
     },
   ];
 
