@@ -126,7 +126,7 @@ function Home() {
           <div>
             <img
               className="img-profile"
-              src="images/small-profile1.PNG"
+              src="images/small-profile1.png"
               alt="profile-img"
             />
           </div>
