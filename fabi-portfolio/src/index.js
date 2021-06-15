@@ -6,8 +6,8 @@ import ReactGA from 'react-ga';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-const TRACKING_ID = "G-Z29TKJE92X"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize("G-Z29TKJE92X");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
