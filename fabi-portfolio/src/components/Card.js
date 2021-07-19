@@ -3,7 +3,7 @@
 
 function Card({ imgSrc, title, subtitle, description, viewUrl }) {
     return (
-      <div className="services-card col-sm-4 grid d-flex justify-content-md-center my-1">    
+      <div className="services-card col-lg-4 col-md-6 col-sm-12 grid d-flex justify-content-center my-1">    
 
         <figure className="effect-milo">
         <img src={imgSrc} alt={""}/>

@@ -28,12 +28,12 @@ function Home() {
       viewUrl: "https://fabicf-weather.vercel.app/",
     },
     {
-      imgSrc: "images/project-3.png",
-      title: "FreshGoods",
-      subtitle: "Ecommerce",
-      description: "C#, asp.NET, Razor Pages, JS, API",
-      viewUrl: "https://github.com/fabicf/freshgoods-ecommerce",
-    },
+      imgSrc: "images/project-6.PNG",
+      title: "Mobile App",
+      subtitle: "Math Quiz",
+      description: "Java, android studio",
+      viewUrl: "https://github.com/fabicf/math-quiz-mobile-android",
+    },   
     {
       imgSrc: "images/project-4.JPG",
       title: "BlueSky",
@@ -42,19 +42,20 @@ function Home() {
       viewUrl: "http://blueskyrealestate.ipd24.ca/",
     },
     {
+      imgSrc: "images/project-3.png",
+      title: "FreshGoods",
+      subtitle: "Ecommerce",
+      description: "C#, asp.NET, Razor Pages, JS, API",
+      viewUrl: "https://github.com/fabicf/freshgoods-ecommerce",
+    },
+    {
       imgSrc: "images/project-5.JPG",
       title: "Hotel",
       subtitle: "CRM",
       description: "PHP Slim, MeekroDB, Twig, Monolog, AJAX, Google Maps API",
       viewUrl: "https://github.com/fabicf/Ominigold-HMS",
     },
-    {
-      imgSrc: "images/project-6.JPG",
-      title: "Portfolio",
-      subtitle: "Website",
-      description: "React.js, Bootstrap React, Javascript",
-      viewUrl: "https://github.com/fabicf/personal-portfolio",
-    },
+    
   ];
 
   const icons = [
@@ -172,10 +173,10 @@ function Home() {
           </div>
           <div className="col-lg-6 col-md-12 text-center px-5 pt-5">
             <h3>My Skills</h3>
-            <p className="text-left px-5 ">
-              <span><b>Front-end:</b> HTML, CSS, JavaScript, Bootstrap, React, Ajax, jQuery{" "}
+            <p className="text-left">
+              <span><b>Front-end:</b> HTML, CSS, JavaScript, Bootstrap, React, Ajax, jQuery, Mobile{" "}
               <br /></span>
-              <span><b>Back-end:</b> C# .NET, WPF, XAML, Java, NodeJS, REST API, PHP <br /></span>
+              <span><b>Back-end:</b> C# .NET, WPF, XAML, Java, NodeJS, REST API, PHP, Mobile <br /></span>
               <span><b>Database:</b> SQL, MySQL, SQL Server <br /></span>
               <span><b>Tools:</b> Git, Jira, GitLab, Bitbucket, Balsamiq Wireframe, Trello <br /></span>
               <span><b>Miscellaneous:</b> OOP, Agile/Scrum Methodology, WMS, ImageJ <br /></span>
@@ -186,7 +187,7 @@ function Home() {
 
         <div className="text-center p-5 portfolio-session" id="portfolio">
           <h3 className="h3-dark">Portfolio</h3>
-          <div className="services-cards-container row px-5 mx-5">
+          <div className="services-cards-container row">
             {cards.map((card) => (
               <Card
                 key={card.title}
