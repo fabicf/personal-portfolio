@@ -28,7 +28,7 @@ function Home() {
       viewUrl: "https://fabicf-weather.vercel.app/",
     },
     {
-      imgSrc: "images/project-6.PNG",
+      imgSrc: "images/project-6.png",
       title: "Mobile App",
       subtitle: "Math Quiz",
       description: "Java, android studio",
